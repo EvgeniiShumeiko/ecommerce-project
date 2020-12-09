@@ -91,3 +91,22 @@ body {
     font-size: 32px;
     line-height: 38px;
 }
+
+.catalog {
+    padding-top: 64px
+}
+
+.catalog__top {
+    display: flex;
+    grid-gap: 30px;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+}
+
+.catalog__image {
+    width: 100%;
+}
+
+.catalog__big {
+    padding-top:30px;
+}

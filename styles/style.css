@@ -1,1 +1,93 @@
-@import "reset.css"
+@import "reset.css";
+
+html,
+body {
+    font-size: 14px;
+}
+
+.center {
+    padding: 0 calc(50vw - 570px);
+}
+
+.heading-general {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.header {
+    display: flex;
+    height: 75px;
+    background-color: #222222;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 40px;
+}
+
+.header__right {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 33px;
+}
+
+.promo {
+    background-color: #F1E4E6;
+    position: relative;
+}
+
+.promo__center {
+    display: flex;
+    padding: 0 calc(50vw - 800px);
+}
+
+.promo__img {
+    width: 100%;
+}
+
+.promo__left {
+    width: 50%;
+    z-index: 1;
+}
+
+.promo__left-background {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f4f3f3;
+    z-index: 0;
+}
+
+.promo__right {
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    width: 50%;
+}
+
+.promo__content {
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.promo__heading,
+.promo__text {
+    text-transform: uppercase;
+}
+
+.promo__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}

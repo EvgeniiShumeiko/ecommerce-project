@@ -16,13 +16,12 @@ body {
 }
 
 
-
 .text {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .heading {
@@ -34,6 +33,13 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #222222
+}
+
+.heading-mini {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .primary-color
@@ -143,7 +149,7 @@ body {
     align-items: center;
 }
 
-.footer__form__text {
+.footer__form__heading-mini {
     margin-top: 12px;
 }
 
@@ -175,6 +181,7 @@ body {
 
 .footer__copyright {
     color: #fff;
+    font-size: 16px;
 }
 
 .footer__social {
@@ -241,14 +248,11 @@ body {
 }
 
 .promo__heading,
-.promo__text {
+.promo__heading-general {
     text-transform: uppercase;
 }
 
 .promo__text {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
     font-size: 32px;
     line-height: 38px;
 }
@@ -292,4 +296,34 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #fff
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #222222;
+    height: 340px;
+    align-items: center;
+}
+
+.feature__item {
+    width: 350px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature__heading {
+    color: #fff;
+    text-transform: none;
+    font-size: 20px;
+}
+
+.feature__text {
+    color: #FBFBFB;
+    width: 300px;
 }

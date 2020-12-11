@@ -9,6 +9,7 @@ body {
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    font-display: swap;
 }
 
 .center {
@@ -130,7 +131,7 @@ body {
 }
 
 .footer__subscribe {
-    background-image: url(../img/subscribe-cover.jpg);
+    background-image: url(../static/images/subscribe-cover.jpg);
     min-height: 450px;
     background-size: cover;
     display: flex;

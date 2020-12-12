@@ -10,6 +10,10 @@
     outline-offset: 0;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
 
 /* Убираем подчеркивание ссылок */
 a {

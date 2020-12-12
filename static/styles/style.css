@@ -31,6 +31,24 @@ a:hover {
     line-height: 16px;
 }
 
+.heading-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+.heading-hr {
+    width: 64px;
+    height: 3px;
+    background-color: #EF5B70;
+    margin: 12px;
+    border: none
+}
+
 .heading {
     font-family: Lato;
     font-style: normal;
@@ -95,6 +113,10 @@ a:hover {
 .btn_primary_outline:hover {
     background-color: #F16D7F;
     color: #fff;
+}
+
+.btn_primary_outline:hover path{
+    fill: #fff;
 }
 
 .btn_secondary_outline {
@@ -631,4 +653,91 @@ a:hover {
 
 .pagination__icon {
     color: #000;
+}
+
+.product-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    height: 777px;
+    padding-top:11px;
+}
+
+.product-slider__content {
+    align-self: flex-start;
+}
+
+.product-slider__content img {
+    z-index:0;
+    
+}
+
+.product-slider__control {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 42, 42, 0.15);
+    color: #000;
+    cursor: pointer;
+}
+
+.product-slider__control:hover i {
+    color: #F16D7F;
+}
+
+.product-slider__control_left {
+    left: 0;
+}
+
+.product-slider__control_right {
+    right: 0;
+}
+
+.product-info {
+    position: relative;
+    display: flex;
+    width: 1140px;
+    padding: 0 250px;
+    margin: 0 auto;
+    border: 1px solid #EAEAEA;
+    margin-top: -60px;
+    background-color: #fff;
+    z-index: 100;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-info__text {
+    margin-top: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: #5E5E5E
+}
+
+.product-info__price {
+    font-weight: 300;
+    padding-top: 32px;
+}
+
+.product-info__section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 65px 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.product-info__section:last-child {
+    border:none;
+}
+
+.product-info__add-to-cart {
+    margin-top: 48px;
 }

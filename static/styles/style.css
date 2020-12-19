@@ -92,7 +92,7 @@ a:hover {
     justify-content: space-between;
     grid-gap: 10px;
     align-items: center;
-    background:none;
+    background: none;
 }
 
 .btn_primary {
@@ -115,7 +115,7 @@ a:hover {
     color: #fff;
 }
 
-.btn_primary_outline:hover path{
+.btn_primary_outline:hover path {
     fill: #fff;
 }
 
@@ -186,7 +186,7 @@ a:hover {
     padding-top: 96px;
     width: 50%;
     min-width: 360px;
-    flex:1;
+    flex: 1;
 }
 
 .footer__avatar {
@@ -205,7 +205,7 @@ a:hover {
 .footer__form {
     min-width: 360px;
     width: 50%;
-    flex:1;
+    flex: 1;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -231,7 +231,7 @@ a:hover {
     font-size: 14px;
     color: #222224;
     padding: 0 22px;
-    border:none;
+    border: none;
     background-color: #E1E1E1;
 }
 
@@ -253,7 +253,7 @@ a:hover {
     grid-gap: 7px
 }
 
-.social{
+.social {
     width: 32px;
     height: 32px;
     background-color: #fff;
@@ -291,7 +291,7 @@ a:hover {
 
 .promo__left-background {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 50%;
     height: 100%;
@@ -336,7 +336,7 @@ a:hover {
 }
 
 .catalog__big {
-    margin-top:30px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -525,12 +525,12 @@ a:hover {
 }
 
 .filter-menu {
-    min-width: 360px;   
-    flex-grow: 1; 
+    min-width: 360px;
+    flex-grow: 1;
     position: relative;
 }
 
-.filter-menu:hover .filter-menu__body  {
+.filter-menu:hover .filter-menu__body {
     display: block;
 }
 
@@ -564,7 +564,7 @@ a:hover {
 }
 
 .filter-menu__category {
-    color:#EF5B70;
+    color: #EF5B70;
     text-transform: uppercase;
     padding: 11px;
     border-left: 5px solid #EF5B70;
@@ -641,6 +641,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
 .pagination__item {
     padding: 11px;
     font-size: 16px;
@@ -661,7 +662,7 @@ a:hover {
     align-items: center;
     background-color: #f7f7f7;
     height: 777px;
-    padding-top:11px;
+    padding-top: 11px;
 }
 
 .product-slider__content {
@@ -669,8 +670,8 @@ a:hover {
 }
 
 .product-slider__content img {
-    z-index:0;
-    
+    z-index: 0;
+
 }
 
 .product-slider__control {
@@ -735,7 +736,7 @@ a:hover {
 }
 
 .product-info__section:last-child {
-    border:none;
+    border: none;
 }
 
 .product-info__add-to-cart {

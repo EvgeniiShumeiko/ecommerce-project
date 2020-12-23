@@ -25,22 +25,6 @@ a
     font-size: 14px
     line-height: 16px
 
-.heading-text
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 16px
-    color: $primaryColor
-    text-transform: uppercase
-
-.heading-hr
-    width: 64px
-    height: 3px
-    background-color: $primaryColor
-    margin: 12px
-    border: none
-
 .heading
     font-family: Lato
     font-style: normal
@@ -51,22 +35,38 @@ a
     text-transform: uppercase
     color: #222222
 
+    &-hr
+        width: 64px
+        height: 3px
+        background-color: $primaryColor
+        margin: 12px
+        border: none
+
     &-mini
         font-family: Lato
         font-style: normal
         font-weight: normal
         font-size: 18px
 
+    &-text
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        color: $primaryColor
+        text-transform: uppercase
+
+    &-general
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: #222222
+
 .primary-color
     color: $primaryColor
-
-.heading-general
-    font-family: Lato
-    font-style: normal
-    font-weight: 900
-    font-size: 48px
-    line-height: 58px
-    color: #222222
 
 .btn
     height: 50px
@@ -263,8 +263,33 @@ a
         border: none
         background-color: #E1E1E1
 
-//Стили главной страницы сайта
+.fields-set
+    display: flex
+    flex-direction: column
+    grid-gap: 21px
+    padding: 21px 0
+
+.radio
+    display: flex
+    grid-gap: 20px
+
+    &__label
+        display: flex
+        grid-gap: 10px
+        justify-content: flex-start
+        align-items: center
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #000000
+
+    &__input
+
+// Стили главной страницы сайта
 @import pages/main
 
 // Стили страниц каталога и продуктов
 @import pages/products
+
+// Стили страницы регистрации
+@import pages/registration

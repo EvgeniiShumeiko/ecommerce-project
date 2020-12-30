@@ -54,6 +54,8 @@ body {
 
 a {
   color: #6F6E6E;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 a:hover {
@@ -139,6 +141,10 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   background: none;
+  -webkit-transition: background-color .4s, color .4s, -webkit-box-shadow .4s;
+  transition: background-color .4s, color .4s, -webkit-box-shadow .4s;
+  transition: background-color .4s, color .4s, box-shadow .4s;
+  transition: background-color .4s, color .4s, box-shadow .4s, -webkit-box-shadow .4s;
 }
 
 .btn_primary {
@@ -477,11 +483,17 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   color: #000;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .social:hover {
   background-color: #F16D7F;
   color: #fff;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .promo {
@@ -690,6 +702,15 @@ a:hover {
   position: relative;
   width: 360px;
   background: #F8F8F8;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.product:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .product:hover .product__image {
@@ -1304,5 +1325,14 @@ a:hover {
   font-size: 24px;
   color: #575757;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.product-card__close:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=style.css.map */

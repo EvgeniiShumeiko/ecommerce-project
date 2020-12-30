@@ -217,7 +217,7 @@ a:hover {
   grid-gap: 40px;
 }
 
-.header__right {
+.header__right, .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +327,7 @@ a:hover {
           align-items: center;
   padding-top: 96px;
   width: 50%;
-  min-width: 360px;
+  min-width: 343px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -501,6 +501,7 @@ a:hover {
 .promo {
   background-color: #F1E4E6;
   position: relative;
+  min-height: 365px;
 }
 
 .promo__center {
@@ -1339,67 +1340,143 @@ a:hover {
           transform: rotate(360deg);
 }
 
-.center {
-  padding-left: calc(50% - 368px);
-  padding-right: calc(50% - 368px);
+@media (max-width: 1023px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .heading__general {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .promo__right {
+    padding-left: 40px;
+  }
+  .catalog {
+    padding-top: 18px;
+  }
+  .catalog__top {
+    grid-gap: 20px;
+  }
+  .catalog__big {
+    margin-top: 20px;
+  }
+  .products-box {
+    padding-top: 48px;
+  }
+  .products-box__content {
+    grid-gap: 16px;
+    padding: 32px 0;
+  }
+  .feature {
+    margin-top: 65px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 48px;
+  }
+  .footer__subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__quote {
+    padding-top: 53px;
+  }
+  .footer__form {
+    padding-bottom: 140px;
+  }
 }
 
-.heading__general {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 53px;
-}
-
-.promo__right {
-  padding-left: 40px;
-}
-
-.catalog__top {
-  grid-gap: 20px;
-}
-
-.catalog__big {
-  margin-top: 20px;
-}
-
-.products-box {
-  padding-top: 48px;
-}
-
-.products-box__content {
-  grid-gap: 16px;
-  padding: 32px 0;
-}
-
-.feature {
-  margin-top: 65px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 48px;
-}
-
-.footer__subscribe {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 48px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__quote {
-  padding-top: 53px;
-}
-
-.footer__form {
-  padding-bottom: 140px;
+@media (max-width: 767px) {
+  .center {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .input-single {
+    width: 230px;
+  }
+  .header__box {
+    display: none;
+  }
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .promo__left, .promo__background {
+    display: none;
+  }
+  .promo__right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .promo__heading {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .promo__heading-general {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .catalog__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog__image_big {
+    display: none;
+  }
+  .catalog__big {
+    background: url(/assets/images/catalog_accesories.jpg) center;
+    background-size: cover;
+    min-height: 111px;
+  }
+  .products-box {
+    padding-top: 64px;
+  }
+  .product, .product__image {
+    width: 100%;
+  }
+  .future {
+    margin-top: 95px;
+    padding-bottom: 81px;
+  }
+  .footer__subscribe {
+    grid-gap: 59px;
+  }
+  .footer__form {
+    padding-bottom: 115px;
+  }
+  .footer__form__heading-mini {
+    font-size: 14px;
+  }
+  .footer__blockquote {
+    width: 343px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

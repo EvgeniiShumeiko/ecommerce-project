@@ -7,20 +7,20 @@
 
 =screen($size)
     $desktop: "(min-width: 1024px)"
-    $tablet: "(min-width: 768px) and (max-width: 1023px)"
+    $tablet: "(max-width: 1023px)"
     $mobile: "(max-width: 767px)"
     @if $size == desktop
         @media only screen and #{$desktop}
-        @content
+            @content
 
     @else if $size == tablet
-        @media only screen and #{$tablet}
-        @content
+        @media #{$tablet}
+            @content
 
     @else if $size == mobile
-        @media only screen and #{$mobile}
-        @content
+        @media #{$mobile}
+            @content
 
     @else
         @media only screen and #{$size}
-        @content
+            @content

@@ -63,7 +63,8 @@ a:hover {
 }
 
 .center {
-  padding: 0 calc(50vw - 570px);
+  padding-left: calc(50vw - 570px);
+  padding-right: calc(50vw - 570px);
 }
 
 .text {
@@ -96,15 +97,16 @@ a:hover {
 .heading-mini {
   font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 16px;
 }
 
 .heading-text {
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   color: #F16D7F;
   text-transform: uppercase;
@@ -1299,13 +1301,14 @@ a:hover {
 
 .product-card__text {
   font-family: Lato;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
+  line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #575757;
-  line-height: 26px;
 }
 
 .product-card__quantity {
@@ -1334,5 +1337,69 @@ a:hover {
 .product-card__close:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.center {
+  padding-left: calc(50% - 368px);
+  padding-right: calc(50% - 368px);
+}
+
+.heading__general {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+}
+
+.promo__right {
+  padding-left: 40px;
+}
+
+.catalog__top {
+  grid-gap: 20px;
+}
+
+.catalog__big {
+  margin-top: 20px;
+}
+
+.products-box {
+  padding-top: 48px;
+}
+
+.products-box__content {
+  grid-gap: 16px;
+  padding: 32px 0;
+}
+
+.feature {
+  margin-top: 65px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 48px;
+}
+
+.footer__subscribe {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__quote {
+  padding-top: 53px;
+}
+
+.footer__form {
+  padding-bottom: 140px;
 }
 /*# sourceMappingURL=style.css.map */

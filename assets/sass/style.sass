@@ -1,5 +1,6 @@
 @import variables
 @import reset
+@import mixins
 
 html,
 body
@@ -18,21 +19,14 @@ a
         color: $primaryColor
 
 .center
-    padding: 0 calc(50vw - 570px)
+    padding-left: calc(50vw - 570px)
+    padding-right: calc(50vw - 570px)
 
 .text
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 16px
+    +fontParams(14px, 300, 16px)
 
 .heading
-    font-family: Lato
-    font-style: normal
-    font-weight: 700
-    font-size: 24px
-    line-height: 29px
+    +fontParams(24px, 700, 29px)
     text-align: center
     text-transform: uppercase
     color: #222222
@@ -45,26 +39,15 @@ a
         border: none
 
     &-mini
-        font-family: Lato
-        font-style: normal
-        font-weight: normal
-        font-size: 18px
+        +fontParams(18px)
 
     &-text
-        font-family: Lato
-        font-style: normal
-        font-weight: 300
-        font-size: 14px
-        line-height: 16px
+        +fontParams(16px, 300, 16px)
         color: $primaryColor
         text-transform: uppercase
 
     &-general
-        font-family: Lato
-        font-style: normal
-        font-weight: 900
-        font-size: 48px
-        line-height: 58px
+        +fontParams(48px, 900, 58px)
         color: #222222
 
 .primary-color
@@ -299,3 +282,5 @@ a
 
 // Стили страницы корзины
 @import pages/cart
+
+@import tablet

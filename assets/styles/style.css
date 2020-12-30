@@ -505,7 +505,7 @@ a:hover {
   z-index: 1;
 }
 
-.promo__left-background {
+.promo__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -716,7 +716,7 @@ a:hover {
   color: #fff;
 }
 
-.product__add__icon {
+.product__cart-icon {
   width: 25px;
 }
 
@@ -760,10 +760,6 @@ a:hover {
       align-self: flex-start;
 }
 
-.product-slider__content img {
-  z-index: 0;
-}
-
 .product-slider__control {
   position: absolute;
   width: 47px;
@@ -780,6 +776,10 @@ a:hover {
   background: rgba(42, 42, 42, 0.15);
   color: #000;
   cursor: pointer;
+}
+
+.product-slider__image {
+  z-index: 0;
 }
 
 .product-slider__control:hover i {
@@ -918,13 +918,13 @@ a:hover {
   margin-top: 16px;
 }
 
-.filter-menu__ul {
+.filter-menu__list {
   list-style-type: none;
   font-weight: 400;
   padding: 0 18px;
 }
 
-.filter-menu__ul__item {
+.filter-menu__item {
   margin-top: 11px;
 }
 
